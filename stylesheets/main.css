@@ -73,14 +73,14 @@ h3 {
 	background: -ms-linear-gradient(top,  #2b2b2b 0%,#6b6b6b 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #2b2b2b 0%,#6b6b6b 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#6b6b6b',GradientType=0 ); /* IE6-9 */
-	padding: 10px 15px;
+	border-bottom: 3px solid #ae0000;
 }   
    
 #header .content {
 	max-width: 73.125em;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 10px 15px;
+	padding: 10px 15px 0 15px;
 	*zoom: 1;
 }
 #header .content:before, #header .content:after {
@@ -123,7 +123,10 @@ h3 {
 }
 #header h2 {
 	background-color: #ae0000;
+	border: 1px solid black;
+	border-top: none;
 	color: white;
+	padding: 2px 0;
 	position: absolute;
 	width: 600px;
 	left: -100px;
@@ -136,24 +139,33 @@ h3 {
    ----------------------------------------------------*/
 
 #navigation {
-	float: left;
-	width: 200px;
+	margin-top: 10px;
 }
 
 #navigation ul li {
-	border-bottom: 1px solid #ccc;
+	background-color: #202020;
+	border: 1px solid white;
+	border-bottom: 0px;
+	display: inline-block;
 	list-style-type: none;
-	padding: 8px 0px;
-	text-align: left;
+	text-align: center;
+	width: 19%; /*Will need to change as list elements grow; could also use javascript */
 }
 
 #navigation ul li a {
-	color: #666666;
+	color: white;
+	display: block;
+	font-size: 14px;
+	padding: 8px 0px;
 	text-decoration: none;
+	width: 100%;
+}
+#navigation ul li:hover {
+	background-color: #ae0000;
 }
 
 #navigation ul li a:hover {
-	color: #CD9100;
+	color: gold;
 }
 
 #navigation .login_link a {
