@@ -1,0 +1,390 @@
+/*	Three-Column Template for UCLA
+		Updated: 01/27/2011
+   	----------------------------------------------------*/
+
+/*	CONTENTS:
+		CSS Reset
+		Generic 
+		Header
+		Navigation
+		Content
+		Sidebar
+		Footer
+		Modules
+*/
+
+/* CSS Reset
+   ----------------------------------------------------*/
+h1, h2, h3, h4, h5, h6, p, ul, li {
+	font-weight: normal;
+	margin: 0;
+	padding:0;
+}
+
+a img {
+	border: 0 none;
+}
+
+/* Generic
+   ----------------------------------------------------*/
+body {
+	font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+	font-size: 13px;
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	font-size: 12px;
+	line-height: 1.5em;
+}
+
+a {
+	color: #005C85;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+h2, h3, h4 {
+	margin-top: 15px;
+}
+
+h2 {
+	font-size: 130%;
+}
+
+h3 {
+	font-size: 110%;
+}
+
+/* Header
+   ----------------------------------------------------*/
+
+#header {
+	background-color: #5E7BA6;
+	border-bottom: 3px solid #FFB300;
+	min-height: 102px;
+	width: 100%;
+}
+#org_title {
+	background-image: url(http://s3.amazonaws.com/os_extranet_images/235268_original.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	min-height: 102px;
+	width: 960px;
+}
+
+#org_title h1 {
+	color: #fff;
+	font-family: tahoma;
+	font-size: 27px;
+	font-weight: normal;
+	margin-left: 235px;
+	padding-top: 35px;
+}
+
+
+/* Navigation
+   ----------------------------------------------------*/
+
+#navigation {
+	float: left;
+	width: 200px;
+}
+
+#navigation ul li {
+	border-bottom: 1px solid #ccc;
+	list-style-type: none;
+	padding: 8px 0px;
+	text-align: left;
+}
+
+#navigation ul li a {
+	color: #666666;
+	text-decoration: none;
+}
+
+#navigation ul li a:hover {
+	color: #CD9100;
+}
+
+#navigation .login_link a {
+	color: #005C85;
+	font-weight: bold;
+}
+
+#navigation .login_link a:hover {
+	color: #63A7C4;
+}
+
+
+
+/* Content
+   ----------------------------------------------------*/
+
+#content_wrapper {
+	margin: 0 auto;
+	padding-top: 20px;
+	width: 960px;
+}
+
+#content {
+	float: right;
+	width: 720px;
+}
+
+#content h1, #leftside h1 {
+	border-bottom:3px solid #DCE5E1;
+	color: #005C85;
+	font-size: 150%;
+	font-weight: normal;
+	margin-bottom: 20px;
+	margin-top: 8px;
+}
+
+#content p {
+	margin-top: 10px;
+}
+
+#content ul {
+	margin-top: 15px;
+	margin-left: 20px;
+}	
+
+#content ul li {
+	margin-bottom: 5px;
+}
+
+#leftside {
+	float: left;
+	width: 480px;
+}
+
+
+/* Sidebar
+   ----------------------------------------------------*/
+
+#rightside {
+	float: right;
+	width: 200px;
+}
+
+#rightside h3 {
+	border-bottom:3px solid #DCE5E1;
+	color: #005C85;
+	font-weight: normal;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-bottom: 4px;
+}
+
+#rightside p + h3 {
+	margin-top: 30px;
+}
+
+#rightside p{
+	font-size: 11px;
+}
+
+#rightside ul {
+	font-size: 12px;
+	margin-top: 0;
+	margin-left: 0;
+}
+
+#rightside ul li {
+	list-style-type: none;
+	margin-bottom: 4px;
+}
+
+#rightside ul li a {
+	text-decoration: none;
+}
+
+#rightside ul li a:hover {
+	text-decoration: underline;
+}
+
+
+/* Footer
+   ----------------------------------------------------*/
+
+#footer {
+	background: #E5EBEB;
+	clear: both;
+	margin-top: 40px;
+	width: 100%;
+}
+#footer #footer_container {
+	margin: 0 auto;
+	padding: 15px;
+	width: 960px;
+}
+#footer #text {
+	color: #4e4e4e;
+	font-size: 10px;
+	line-height: 1.5em;
+	margin: 0 auto;
+}
+#footer #text h5 {
+	color: #005C85;
+	font-size: 13px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+#poweredby {
+	float: right;
+}
+
+#poweredby a {
+	background-image: url(http://s3.amazonaws.com/os_extranet_images/63239_original.png);
+	background-repeat: no-repeat;
+	display: block;
+	height: 36px;
+	margin: 0 auto;
+	overflow: hidden;
+	text-indent: -9999em;
+	width: 200px;
+}
+
+
+
+/* Modules
+   ----------------------------------------------------*/
+
+.mini_calendar thead {
+	background: #5E7BA6;
+}
+.mini_cal_nav a {
+	text-decoration: none;
+}
+
+.pod-header {
+	background: #EBEBEB;
+	color: #666666;
+	font-size: 13px;
+	moz-border-radius: 4px;
+}
+.pod-body b {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.new_pod {
+	background: #f4f4f4;
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	padding: 5px 10px 20px 20px;
+}
+
+.new_pod_bottom li {
+	list-style-type: none;
+}
+
+.new_pod_bottom li a {
+	background: #e7e7e7;
+	border: 1px solid #6d6d6d;
+	margin-bottom: 10px;
+	padding: 6px;
+	text-decoration: none;
+}
+
+.new_pod_bottom li a:hover {
+	background: #fff;
+	border: 1px solid #6d6d6d;
+	color: #000;
+	padding: 6px;
+}
+
+.pod-body label {
+	font-size: 13px;
+}
+
+.pod-body input, .pod-body textarea {
+	border: 1px solid #ccc;
+	width: 300px;
+}
+
+.button, .submit {
+	background: #e7e7e7;
+	border: 1px solid #6d6d6d;
+	moz-border-radius: 2px;
+	padding: 2px 6px;
+}
+
+#calendar_category select {
+	font-size: 10px;
+	height: 25px;
+	padding: 4px;
+	width: 150px;
+}
+
+.module_news li {
+	list-style-type: none;
+}
+
+#module_forms .form_list_view a {
+	background: #E7E7E7;
+	border: #6d6d6d;
+	font-size: 12px;
+	padding: 3px 8px;
+}
+
+#module_forms .form_page_title {
+	font-size: 14px;
+	margin: 5px;
+}
+#module_forms .form_element {
+	padding: 5px;
+}
+#module_forms #newui_forms_elements .form_wrapper input {
+	margin-top: 8px;
+}
+#module_forms .newui_page_title h1 {
+	font-size: 18px;
+	margin: 5px;
+}
+#module_forms .newui_page_title {
+	background: #005f38;
+	padding: 3px;
+}
+#module_news li {
+	background: #f4f4f4;
+	border-bottom: 1px solid #ccc;
+	list-style-type: none;
+	margin-bottom: 10px;
+}
+#module_forms .form_list_view {
+	font-size: 12px;
+}
+#module_files .pod {
+	margin-top: 10px;
+}
+#content #module_files .newui_page_title h1 {
+	display: none;
+	font-size: 10px;
+}
+
+#module_contact .pod-header {
+	display: none;
+}
+
+/* Modules: Calendar */
+form#calendar_category {
+    margin-left: 0;
+    padding: 0;
+    position: relative;
+    top: 20px;
+    width: 100%;
+}
+
+a.button.right {
+    position: relative;
+    top: -60px;
+}
